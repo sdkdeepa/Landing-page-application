@@ -14,7 +14,6 @@ Build a landing page with those specific features:
 ### Completed project details: 
 - Please scroll carefully to see the navigation and the section highlighting.  
 - Tested the page in desktop, tablet and mobile 
-- video : https://youtu.be/fK38c-a9ox0
 - This page is hosted in https://sdkdeepa.github.io/Landing-page-project2
 - Changed web content  and color theme
 - Followed Git versioning (dev to main)
