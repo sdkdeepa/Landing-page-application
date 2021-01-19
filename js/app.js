@@ -15,19 +15,17 @@ const sections = document.querySelectorAll('section');
 //storing all the nav bar list to this variable
 const menuItems = document.getElementById('navbar__list');
 
-// Add class 'active' to section when near top of viewport
-function isInViewport(elem) {
-    const bounding = elem.getBoundingClientRect().top + window.scrollY;
-    return (bounding.top >= 0);
-}
+// Add class 'active' to section when near top of viewport : reference : https://gomakethings.com/how-to-test-if-an-element-is-in-the-viewport-with-vanilla-javascript/
+const isInViewport = function (elem) {
+    var bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
 
-// function getElementOffset(el) {
-//   const rect = el.getBoundingClientRect();
-//   return {
-//     top: rect.top + window.pageYOffset,
-//     left: rect.left + window.pageXOffset,
-//   };
-// }
 
 // creating nav bar 
 function createNavgaitonItemfunction() {
@@ -47,18 +45,21 @@ function createNavgaitonItemfunction() {
     }
 
 }
+// Add class 'active' to section when near top of viewport
 
 function linkHighlight() {
 
     for (section of sections) {
-         const activeLink = document.querySelector(`a[href="#${section.getAttribute("id")}"]` );
+        // finds the nav link corresponds to the current section
+         const navLink = document.querySelector(`a[href="#${section.getAttribute("id")}"]`);
+        // if statements to check the sections and nav link is active and applies css styles
         if (isInViewport(section)) {
                 section.classList.add("your-active-class");
-                activeLink.classList.add("menu__link__active");
-
-            } else {
+                navLink.classList.add("menu__link__active");
+            
+            } else { //checks if the else statement here
                 section.classList.remove("your-active-class");
-                activeLink.classList.remove("menu__link__active");
+                navLink.classList.remove("menu__link__active");
             }
 
         }
@@ -66,13 +67,8 @@ function linkHighlight() {
     }
 
 
-
-/**
- * End Main Functions
- * Begin Events
- *
- */
-
+// calling the create nav items function
 createNavgaitonItemfunction();
 
-window.addEventListener('scroll',isInViewport);
+// highilighting the scroll action by using addEventListner
+window.addEventListener('scroll',linkHighlight);
