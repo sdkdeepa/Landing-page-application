@@ -16,8 +16,8 @@ Build a landing page with those specific features:
 
 - Four sections (hard-coded or dynamically).
 - Four navbar items corresponding to each section (dynamically).
-- Clicking the navbar item >>> scrolling the viewport to the target section. Check ‌this link‌.
-- Clicking the navbar item >>> highlighting the item background for the user to follow easily where s/he surfing. Check ‌this link‌
+- Clicking the navbar item >>> scrolling the viewport to the target section. Check this https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+- Clicking the navbar item >>> highlighting the item background for the user to follow easily where s/he surfing. Check this link https://www.youtube.com/watch?v=jaBLwm_0QAE
 
 
 
