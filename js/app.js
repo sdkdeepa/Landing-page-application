@@ -38,8 +38,8 @@ function createNavgaitonItemfunction() {
         const navList = document.createElement('li');
 
         // adding the nav links as list
-        navList.innerHTML = `<li><a class='menu__link' href='#${sectionID}'> ${sectionData}</a> </li>`;
-
+        navList.innerHTML = `<a class='menu__link' href='#${sectionID}'> ${sectionData}</a>`;
+    
         //add links to the menu
         menuItems.appendChild(navList);
     }
@@ -78,7 +78,7 @@ window.onscroll = function () {
      linkHighlight();
 }
 
-// Smooth scrolling 
+// function for Smooth scrolling 
 function scrollSection(index) {
     sections.scrollIntoView({block: 'end', behavior: 'smooth'})
 }
