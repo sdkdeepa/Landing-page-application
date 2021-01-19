@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Manipulating the DOM</title>
   <!-- Load Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
   <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
@@ -16,10 +19,9 @@
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
       <ul id="navbar__list"></ul>
-    
-
     </nav>
   </header>
+  <!-- Main -->
   <main>
     <header class="main__hero">
       <h1>Udactity projects</h1>
@@ -28,38 +30,65 @@
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-    <section id="section1" data-nav="Section 1" class="your-active-class">
+
+    <!-- Section 1 -->
+    <section id="section1" data-nav="Project 1" class="your-active-class">
       <div class="landing__container">
-        <h2>Personal Blog Website</h2> 
-        <p>This project requires you to utilize your HTML and CSS skills to build out a personal blog website, including custom images, layout, and styling. Along with webpage design considerations, you'll work to appropriately structure your files, as well as use proper CSS and HTML formatting & style.</p>
-        <p>Your project will be evaluated by a Udacity code reviewer according to the Personal Blog Website project rubric. Please make sure to re-review the rubric for detailed project requirements prior to submission. In this project, you'll get to start from scratch! To complete the project, you are able to decide on the HTML and CSS files to include as part of your work, given that the end result is within the confines of the project rubric provided below.</p>
+        <h2>Personal Blog Website</h2>
+        <p>This project requires you to utilize your HTML and CSS skills to build out a personal blog website, including
+          custom images, layout, and styling. Along with webpage design considerations, you'll work to appropriately
+          structure your files, as well as use proper CSS and HTML formatting & style.</p>
+        <p>Your project will be evaluated by a Udacity code reviewer according to the Personal Blog Website project
+          rubric. Please make sure to re-review the rubric for detailed project requirements prior to submission. In
+          this project, you'll get to start from scratch! To complete the project, you are able to decide on the HTML
+          and CSS files to include as part of your work, given that the end result is within the confines of the project
+          rubric provided below.</p>
       </div>
     </section>
-    <section id="section2" data-nav="Section 2">
+    <!-- Section 2 -->
+    <section id="section2" data-nav="Project 2">
       <div class="landing__container">
         <h2>Landing page</h2>
-        <p>This project requires you to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.</p>
-        <p>This project aims to give you real-world scenarios of manipulating the DOM. The functionality you will be using serves two purposes: to prepare you for appending dynamically added data to the DOM, and to show you how javascript can improve the usability of an otherwise static site. This project barely touches the surface of what is possible, but it does use some incredibly common events, methods, and logic.</p>
+        <p>This project requires you to build a multi-section landing page, with a dynamically updating navigational
+          menu based on the amount of content that is added to the page.</p>
+        <p>This project aims to give you real-world scenarios of manipulating the DOM. The functionality you will be
+          using serves two purposes: to prepare you for appending dynamically added data to the DOM, and to show you how
+          javascript can improve the usability of an otherwise static site. This project barely touches the surface of
+          what is possible, but it does use some incredibly common events, methods, and logic.</p>
       </div>
     </section>
-    <section id="section3" data-nav="Section 3">
+    <!-- Section 3 -->
+    <section id="section3" data-nav="Project 3">
       <div class="landing__container">
         <h2>Weather Journal App</h2>
-        <p>This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI in a Weather Journal application.</p>
-        <p>Your project will be evaluated by a Udacity code reviewer according to the Weather-Journal project rubric. Please review the rubric for detailed project requirements. If you'd like to start from scratch without any files, you are encouraged to do so! You learn the most by developing on your own. But, it can be a bit challenging having to start from scratch, so we do provide a starter project (i.e., a "skeleton") to use.</p>
+        <p>This project requires you to create an asynchronous web app that uses Web API and user data to dynamically
+          update the UI in a Weather Journal application.</p>
+        <p>Your project will be evaluated by a Udacity code reviewer according to the Weather-Journal project rubric.
+          Please review the rubric for detailed project requirements. If you'd like to start from scratch without any
+          files, you are encouraged to do so! You learn the most by developing on your own. But, it can be a bit
+          challenging having to start from scratch, so we do provide a starter project (i.e., a "skeleton") to use.</p>
       </div>
     </section>
-    <section id="section4" data-nav="Section 4">
+
+    <!-- Section 4 -->
+    <section id="section4" data-nav="Project 4">
       <div class="landing__container">
         <h2>Evaluate A News Article with Natural Language Processing</h2>
-        <p>This project requires you to build a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.</p>
-        <p>The motive of this project is to have you a taste of the environment and tools you will most likely come across in a front end role. Your focus should be to understand the role every tool and technology is playing in the overall architecture. You shouldn’t feel the need to memorize the particular commands, config setups, or structure that we create here. Every projetc in the industry will have its own custom setup, but if you understand the moving pieces, you will be able to get the gist of even far more complicated projects than this one.</p>
+        <p>This project requires you to build a web tool that allows users to run Natural Language Processing (NLP) on
+          articles or blogs found on other websites.</p>
+        <p>The motive of this project is to have you a taste of the environment and tools you will most likely come
+          across in a front end role. Your focus should be to understand the role every tool and technology is playing
+          in the overall architecture. You shouldn’t feel the need to memorize the particular commands, config setups,
+          or structure that we create here. Every projetc in the industry will have its own custom setup, but if you
+          understand the moving pieces, you will be able to get the gist of even far more complicated projects than this
+          one.</p>
       </div>
     </section>
   </main>
   <footer class="page__footer">
     <p>&copy Deepa Subramanian</p>
   </footer>
-
+  <script src="js/app.js"></script>
 </body>
+
 </html>
