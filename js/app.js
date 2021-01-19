@@ -15,7 +15,7 @@ const sections = document.querySelectorAll('section');
 //storing all the nav bar list to this variable
 const menuItems = document.getElementById('navbar__list');
 
-// Add class 'active' to section when near top of viewport : reference : https://gomakethings.com/how-to-test-if-an-element-is-in-the-viewport-with-vanilla-javascript/
+// Add class 'active' to section when near top of viewport
 const isInViewport = function (elem) {
     var bounding = elem.getBoundingClientRect();
     return (
@@ -45,6 +45,8 @@ function createNavgaitonItemfunction() {
     }
 
 }
+
+
 // Add class 'active' to section when near top of viewport
 
 function linkHighlight() {
@@ -67,8 +69,25 @@ function linkHighlight() {
     }
 
 
-// calling the create nav items function
+// // // calling the create nav items function
 createNavgaitonItemfunction();
 
-// highilighting the scroll action by using addEventListner
-window.addEventListener('scroll',linkHighlight);
+//highilighting the scroll action by using addEventListner
+
+window.onscroll = function () {
+     linkHighlight();
+}
+
+// Smooth scrolling 
+function scrollSection(index) {
+    sections.scrollIntoView({block: 'end', behavior: 'smooth'})
+}
+
+
+// function for addEventListener
+function addClickEventListenerToNavigationItems() {
+    let navItems = document.querySelectorAll('.navbar__item');
+    for (let i = 0; i < navItems.length; i++) {
+        navItems[i].addEventListener("click", () => scrollSection(i));
+    }
+}
