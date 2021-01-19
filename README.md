@@ -1,14 +1,19 @@
 # Landing-page-project2
 Udacity Frontend web developer course project 2 
 
-### Some tips to follow:
+This project mainly focuses students to get hands on experience in the DOM manipulation using Javascript. I have created a navigation bar with links using DOM. 
 
-Build a landing page with those specific features:
+### Project details:
 
-- Four sections (hard-coded or dynamically).
-- Four navbar items corresponding to each section (dynamically).
-- Clicking the navbar item >>> scrolling the viewport to the target section. Check this https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
-- Clicking the navbar item >>> highlighting the item background for the user to follow easily where s/he surfing. Check this link https://www.youtube.com/watch?v=jaBLwm_0QAE
+In the nutshell this project needs focus on the following areas:
+
+1. Add the Fourth section (hard-coded).
+2. Create Four navbar items corresponding to each section (dynamically).
+
+Couple of visuals needs to be added using JS only
+
+3.  Clicking the navbar item >>> scrolling the viewport to the target section. Check this https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+4. Clicking the navbar item >>> highlighting the item background for the user to follow easily where s/he surfing. Check this link https://www.youtube.com/watch?v=jaBLwm_0QAE
 
 
 ### Completed project details: 
