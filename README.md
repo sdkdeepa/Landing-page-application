@@ -19,5 +19,7 @@ Build a landing page with those specific features:
 - Followed Git versioning (dev to main)
 - commented inside the app.js file for each variable definitions and functions
 
+
 All the rubrics have been carefully followed before submission.
+
 
