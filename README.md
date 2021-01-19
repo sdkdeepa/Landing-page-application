@@ -27,4 +27,11 @@ Couple of visuals needs to be added using JS only
 
 All the rubrics have been carefully followed before submission.
 
+### References:
+
+- https://webdesign.tutsplus.com/tutorials/smooth-scrolling-vanilla-javascript--cms-35165
+- https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+- https://www.thewebdeveloperguide.com/javascript-get-data-attribute/
+- https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+
 
