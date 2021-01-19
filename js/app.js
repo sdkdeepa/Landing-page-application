@@ -1,13 +1,9 @@
 /**
  * 
  * Manipulating the DOM exercise.
- * Exercise programmatically builds navigation,
- * scrolls to anchors from navigation,
- * and highlights section in viewport upon scrolling.
- * Dependencies: None
- * JS Version: ES2015/ES6
- * JS Standard: ESlint
- * 
+ * 1) Exercise programmatically builds navigation,
+ * 2) Scrolls to anchors from navigation,and
+ * 3) Highlights section in viewport upon scrolling.
 */
 
 /**
@@ -19,9 +15,23 @@ const sections = document.querySelectorAll('section');
 //storing all the nav bar list to this variable
 const menuItems = document.getElementById('navbar__list');
 
+// Add class 'active' to section when near top of viewport
+function isInViewport(elem) {
+    const bounding = elem.getBoundingClientRect().top + window.scrollY;
+    return (bounding.top >= 0);
+}
+
+// function getElementOffset(el) {
+//   const rect = el.getBoundingClientRect();
+//   return {
+//     top: rect.top + window.pageYOffset,
+//     left: rect.left + window.pageXOffset,
+//   };
+// }
+
 // creating nav bar 
-function createNavgaitonItemfunction () {
-    for (section of sections) {
+function createNavgaitonItemfunction() {
+    for (const section of sections) {
         //getting attribute and storing in variables
         const sectionID = section.getAttribute('id');
         const sectionData = section.getAttribute('data-nav');
@@ -37,54 +47,32 @@ function createNavgaitonItemfunction () {
     }
 
 }
-createNavgaitonItemfunction(); 
-    // Add class 'active' to section when near top of viewport
-    // Scroll to anchor ID using scrollTO event
 
-function linkHighlight(){
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+function linkHighlight() {
 
-        for (const i = $sections.length-1; i>=0; i--) {
-            const currectionSection = $sections[i];
-            const sectionTop = getOffset(currectionSection.top);
+    for (section of sections) {
+         const activeLink = document.querySelector(`a[href="#${section.getAttribute("id")}"]` );
+        if (isInViewport(section)) {
+                section.classList.add("your-active-class");
+                activeLink.classList.add("menu__link__active");
 
-            if (scrollPosition>=sectionTop -250) {
-            const menuItems = sectionIdnavigated[id];
+            } else {
+                section.classList.remove("your-active-class");
+                activeLink.classList.remove("menu__link__active");
+            }
 
+        }
 
     }
 
-    
-    }
-}
-
-
-    /**
-     * End Main Functions
-     * Begin Events
-     *
-    */
-    // Build menu 
-    // Scroll to section on link click
-    // Set sections as active
-
-
-
-
-// Add class 'active' to section when near top of viewport
-
-
-// Scroll to anchor ID using scrollTO event
 
 
 /**
  * End Main Functions
  * Begin Events
- * 
-*/
+ *
+ */
 
-// Build menu 
+createNavgaitonItemfunction();
 
-// Scroll to section on link click
-
-// Set sections as active
+window.addEventListener('scroll',isInViewport);
