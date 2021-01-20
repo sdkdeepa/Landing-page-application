@@ -9,6 +9,10 @@
 */
 
 /* ---- Base Rules ---- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: rgb(136, 203, 171);
   background: linear-gradient(45deg, #e66465, #9198e5);
@@ -182,7 +186,7 @@ section:nth-of-type(3n) .landing__container::after {
   height: 10vh;
   border-radius: 50%;
   opacity: 0;
-  transition: ease 0.5s all;
+  transition: ease 0.10s all;
 }
 
 section:nth-of-type(3n + 1) .landing__container::after {
@@ -201,7 +205,7 @@ section:nth-of-type(3n + 1) .landing__container::after {
   height: 15vh;
   border-radius: 50%;
   opacity: 0;
-  transition: ease 0.5s all;
+  transition: ease 0.10s all;
 }
 
 /* ---- Theme State Rules ---- */
