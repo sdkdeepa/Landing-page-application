@@ -1,7 +1,6 @@
-# Landing-page-project2
-Udacity Frontend web developer course project 2 
+# Udacity Frontend Developer Nanodegree
 
-This project mainly focuses students to get hands on experience in the DOM manipulation using Javascript. I have created a navigation bar with links using DOM. 
+Udacity's project 2 mainly focuses students to get hands on experience in the DOM manipulation using Javascript. I have created a navigation bar with links using DOM. 
 
 ### Project details:
 
