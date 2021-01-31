@@ -26,6 +26,7 @@ h1 {
   font-family: "Fira Sans", sans-serif;
   font-size: 3em;
   margin: 2em 1rem;
+  color:crimson;
 }
 
 @media only screen and (min-width: 35em) {
@@ -36,10 +37,15 @@ h1 {
 }
 
 h2 {
+
   border-bottom: 1px solid #cc1;
   font-family: "Oxygen", Sans-Serif;
   font-size: 3em;
   color: #fff;
+}
+
+.project-link{
+  color: blue;
 }
 
 p {
@@ -61,6 +67,7 @@ section {
   position: relative;
   min-height: 80vh;
 }
+
 
 /* ---- Module Rules ---- */
 
