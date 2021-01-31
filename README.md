@@ -18,7 +18,7 @@ Couple of visuals needs to be added using JS only
 ### Completed project details: 
 - Please scroll carefully to see the navigation and the section highlighting.  
 - Tested the page in desktop, tablet and mobile 
-- This page is hosted in https://sdkdeepa.github.io/Landing-page-project2/index.html
+- This page is hosted in https://sdkdeepa.github.io/Udacity-landing-page-project2/index.html
 - Changed web content  and color theme
 - Followed Git versioning (dev to main)
 - commented inside the app.js file for each variable definitions and functions
