@@ -98,7 +98,8 @@ section {
 
 .navbar__menu .menu__link__active {
   background:#333;
-  color: #fff;
+  color: #e66465;
+
   transition: ease 0.3s all;
 }
 
@@ -193,7 +194,7 @@ section:nth-of-type(3n) .landing__container::after {
   height: 10vh;
   border-radius: 50%;
   opacity: 0;
-  transition: ease 0.10s all;
+  transition: ease 0.20s all;
 }
 
 section:nth-of-type(3n + 1) .landing__container::after {
@@ -212,7 +213,7 @@ section:nth-of-type(3n + 1) .landing__container::after {
   height: 15vh;
   border-radius: 50%;
   opacity: 0;
-  transition: ease 0.10s all;
+  transition: ease 0.20s all;
 }
 
 /* ---- Theme State Rules ---- */
