@@ -112,6 +112,25 @@ section {
   z-index: 5;
 }
 
+
+/* button for certificate */
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.7em 1.5em;
+    margin-top: 1em;
+    z-index: 1;
+    color: #e66465;
+    background:white;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: white;
+    border-style:solid;
+    text-align: center;
+    text-decoration: none;
+}
+
 /* Footer Styles */
 .page__footer {
   background: #fff;
