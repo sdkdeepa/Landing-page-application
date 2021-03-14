@@ -46,6 +46,7 @@ h2 {
 
 .project-link{
   color: blue;
+  text-decoration: none;
 }
 
 p {
@@ -67,6 +68,8 @@ section {
   position: relative;
   min-height: 40vh;
 }
+
+
 
 
 /* ---- Module Rules ---- */
