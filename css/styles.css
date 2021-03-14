@@ -143,6 +143,11 @@ section {
   text-align: center;
 }
 
+footer a{
+  text-decoration: none;
+}
+
+
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
 .landing__container {
