@@ -27,7 +27,7 @@ Couple of visuals needs to be added using JS only
 All the rubrics have been carefully followed before submission.
 
 Screenshot:
-![alt text](https://github.com/sdkdeepa/Landing-page-project2/blob/main/screenshots/Screen%20Shot%202021-01-19%20at%202.59.47%20PM.png)
+![hosted app screenshot](https://github.com/sdkdeepa/Udacity-landing-page-project2/blob/main/screenshots/hosted-app-screenshot.png)
 
 ### References:
 
