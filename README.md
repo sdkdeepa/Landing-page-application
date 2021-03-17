@@ -12,7 +12,7 @@ In the nutshell this project needs focus on the following areas:
 Couple of visuals needs to be added using JS only
 
 3.  Clicking the navbar item >>> scrolling the viewport to the target section. Check this https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
-4. Clicking the navbar item >>> highlighting the item background for the user to follow easily where s/he surfing. Check this link https://www.youtube.com/watch?v=jaBLwm_0QAE
+4. Clicking the navbar item >>> highlighting the item background for the user to follow easily where s/he surfing. 
 
 
 ### Completed project details: 
